@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Product Details - HA Collection</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body class="light-mode">
+  <header>
+    <div class="logo">HA Collection</div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../cart.html">Cart</a></li>
+        <li><button id="themeToggle">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="product-detail" data-aos="fade-up">
+    <img src="../assets/images/bridal1.jpg" alt="Bridal Suit">
+    <div class="details">
+      <h2>Elegant Bridal Suit</h2>
+      <p class="price" data-inr="899">₨899</p>
+      <label for="size">Select Size:</label>
+      <select id="size">
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>Custom</option>
+      </select>
+      <button onclick="addToCart()">Add to Cart</button>
+      <button onclick="sendToWhatsApp()" class="whatsapp-btn">Order via WhatsApp</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HA Collection. All rights reserved.</p>
+  </footer>
+
+  <script src="../assets/js/app.js"></script>
+  <script>
+    function addToCart() {
+      alert("Added to cart!");
+    }
+
+    function sendToWhatsApp() {
+      const size = document.getElementById('size').value;
+      const price = document.querySelector('.price').innerText;
+      const message = encodeURIComponent(`Hi HA Collection,\n\nI want to order: Elegant Bridal Suit\nSize: ${size}\nPrice: ${price}\n\nPlease confirm availability.`);
+      window.open(`https://wa.me/923001234567?text=${message}`, '_blank');
+    }
+  </script>
+</body>
+</html>
