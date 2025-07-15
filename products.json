@@ -1,0 +1,40 @@
+{
+    "new-collection": [
+        {
+            "id": 1,
+            "name": "Elegant Blue Suit",
+            "price": 99.99,
+            "image": "product1.jpg",
+            "description": "A stunning blue suit perfect for any occasion.",
+            "category": "new-collection"
+        },
+        {
+            "id": 2,
+            "name": "Chic White Suit",
+            "price": 89.99,
+            "image": "product2.jpg",
+            "description": "A crisp white suit for a fresh look.",
+            "category": "new-collection"
+        }
+    ],
+    "summer-collection": [
+        {
+            "id": 3,
+            "name": "Floral Summer Suit",
+            "price": 79.99,
+            "image": "product3.jpg",
+            "description": "Light and breezy for summer days.",
+            "category": "summer-collection"
+        }
+    ],
+    "winter-collection": [],
+    "bridal-collection": [],
+    "party-wear": [],
+    "casual-wear": [],
+    "petite-sizes": [],
+    "plus-sizes": [],
+    "maternity-suits": [],
+    "work-wear": [],
+    "wedding-guest": [],
+    "travel-wear": []
+}
