@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Us - HA Collection</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body class="light-mode">
+  <header>
+    <div class="logo">HA Collection</div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><button id="themeToggle">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form action=" https://formspree.io/f/YOUR_FORM_ID " method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="tawk-chat">
+      <!-- Paste Tawk.to Embed Code Here -->
+      <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+          var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+          s1.async=true;
+          s1.src='https://embed.tawk.to/YOUR_TAWK_ID/default ';
+          s1.charset='UTF-8';
+          s1.setAttribute('crossorigin','*');
+          s0.parentNode.insertBefore(s1,s0);
+        })();
+      </script>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HA Collection. All rights reserved.</p>
+  </footer>
+
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>
